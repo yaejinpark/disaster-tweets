@@ -7,9 +7,9 @@
 
 CREATE TABLE "test" (
     "id" int   NOT NULL,
-    "keyword" string   NULL,
-    "location" string   NULL,
-    "text" string   NOT NULL,
+    "keyword" varchar   NULL,
+    "location" varchar   NULL,
+    "text" varchar   NOT NULL,
     CONSTRAINT "pk_test" PRIMARY KEY (
         "id"
      )
@@ -17,9 +17,9 @@ CREATE TABLE "test" (
 
 CREATE TABLE "train" (
     "id" int   NOT NULL,
-    "keywork" string   NULL,
-    "location" string   NULL,
-    "text" string   NOT NULL,
+    "keywork" varchar   NULL,
+    "location" varchar   NULL,
+    "text" varchar   NOT NULL,
     "target" int   NOT NULL,
     CONSTRAINT "pk_train" PRIMARY KEY (
         "id"

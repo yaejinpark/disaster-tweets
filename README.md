@@ -11,7 +11,10 @@ Data source
 Data description
 
 ### Database
-Schema image for test and train tables: [Schema Image](resources/schema.png)
+
+Kaggle challenge files test.csv and train.csv imported to PostgreSQL database for use in Jupyter. 
+
+Schema image for test and train tables: [schema image](resources/schema.png)
 Schema file for test and train tables: [schema.sql](resources/schema.sql)
 
 ## Technologies
