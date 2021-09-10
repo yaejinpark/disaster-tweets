@@ -11,7 +11,8 @@ Data source
 Data description
 
 ### Database
-Schema for test and train tables: [Schema](resources/schema.png)
+Schema image for test and train tables: [Schema Image](resources/schema.png)
+Schema file for test and train tables: [schema.sql](resources/schema.sql)
 
 ## Technologies
 Jupyter
