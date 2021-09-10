@@ -10,6 +10,9 @@ Questions we hope to answer
 Data source
 Data description
 
+### Database
+Schema for test and train tables: [Schema](resources/schema.png)
+
 ## Technologies
 Jupyter
 Python
