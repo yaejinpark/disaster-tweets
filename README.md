@@ -16,6 +16,8 @@ Python
 PostgreSQL
 
 ## Communication Protocols 
-We will be using:
+
 * Google Docs to share information outside of Github
 * Github with individual branches in order to post code and update the ReadMe
+* Weekly meetings to discuss updates and plan roles for the upcoming week 
+* Slack to communicate with eachother, ask questions, get help, etc. 
