@@ -18,7 +18,7 @@ Kaggle challenge files test.csv and train.csv imported to PostgreSQL database fo
  - Schema file for test and train tables: [schema.sql](resources/schema.sql)
 
 Importing the original kaggle datasets into PostgreSQL was problematic due to the inherent multi-line tweets including line feeds without carriage returns. Process utilized to import the data as follows:
-1.  Utilizing Microsoft Excel or a similar program, open the CSV file.
+1.  Utilizing Microsoft Excel or a similar program open the CSV file.
 2.  Delete the header row. pgAdmin doesn't have the option to view the first row in a text file as a header row.
 3.  Use the Save As option to save the file in text format, this converts the comma separated value into a tab delimited file and adds carriage returns at the end of each row.
 4.  Using Notepad++ or a similar text editor that displays End of Line symbols (using the "Extended Search" mode for Notepad++) in the Replace window:
