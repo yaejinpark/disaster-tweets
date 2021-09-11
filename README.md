@@ -16,3 +16,6 @@ Python
 PostgreSQL
 
 ## Communication Protocols 
+We will be using:
+* Google Docs to share information outside of Github
+* 
