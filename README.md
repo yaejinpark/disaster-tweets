@@ -22,18 +22,18 @@ Importing the original kaggle datasets into PostgreSQL was problematic due to th
 2. Delete the header row. pgAdmin doesn't have the option to view the first row in a text file as a header row.
 3. Use the Save As option to save the file in text format, this converts the comma separated value into a tab delimited file and adds carriage returns at the end of each row.
 4. Using Notepad++ or a similar text editor that displays End of Line symbols (using the "Extended Search" mode for Notepad++) in the Replace window:
-  - Do a replace all on "\n" to " ". This removes all line feeds and keeps the text of the tweets intact, but it also adds a space after each carriage return.
-  - Do a replace all on "\r " to "\r". This removes the extra space after the added carriage returns added by Excel.
-  - This creates a consistent format throughout the file that pgAdmin can interpret based on the first row. A carriage return is sufficient, adding the line feed back is not necessary.
+    - Do a replace all on "\n" to " ". This removes all line feeds and keeps the text of the tweets intact, but it also adds a space after each carriage return.
+    - Do a replace all on "\r " to "\r". This removes the extra space after the added carriage returns added by Excel.
+    - This creates a consistent format throughout the file that pgAdmin can interpret based on the first row. A carriage return is sufficient, adding the line feed back is not necessary.
 5. test.txt is now ready, though train.txt requires one additional change.
 6. Line 3087 in train.txt the tweet includes characters that are interpreted as regex that will throw an error in pgAdmin during a table import. This can be resolved in one of two ways:
-  - Remove the rows containing such characters.
-  - Encapsulate the tweet in quotes. The row of data should be the following:
-  > 4428	electrocute		"@lightseraphs pissed at you and could have their pikachu electrocute you and :\\\"	0
+    - Remove the rows containing such characters.
+    - Encapsulate the tweet in quotes. The row of data should be the following:
+        > 4428	electrocute		"@lightseraphs pissed at you and could have their pikachu electrocute you and :\\\"	0
 7. Since it was just a single row quotes were added to keep all training data. If such errors were replicated throughout manually editing wouldn't be recommended.
 8. In pgAdmin import the .txt file with the following settings:
-  - Format - text
-  - Delimiter - [tab]
+    - Format - text
+    - Delimiter - [tab]
 
 Versions used in import:
  - Microsoft Excel Home and Student 2019, Version 2108(Build 14326.20238 Click-to-Run)
