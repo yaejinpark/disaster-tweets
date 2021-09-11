@@ -29,7 +29,9 @@ Importing the original kaggle datasets into PostgreSQL was problematic due to th
 6. Line 3087 in train.txt the tweet includes characters that are interpreted as regex that will throw an error in pgAdmin during a table import. This can be resolved in one of two ways:
     - Remove the rows containing such characters.
     - Encapsulate the tweet in quotes. The row of data should be the following:
+
         > 4428	electrocute		"@lightseraphs pissed at you and could have their pikachu electrocute you and :\\\"	0
+
 7. Since it was just a single row quotes were added to keep all training data. If such errors were replicated throughout manually editing wouldn't be recommended.
 8. In pgAdmin import the .txt file with the following settings:
     - Format - text
