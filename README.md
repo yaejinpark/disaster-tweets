@@ -14,8 +14,8 @@ Data description
 
 Kaggle challenge files test.csv and train.csv imported to PostgreSQL database for use in Jupyter. 
 
-Schema image for test and train tables: [schema image](resources/schema.png)
-Schema file for test and train tables: [schema.sql](resources/schema.sql)
+ - Schema image for test and train tables: [schema image](resources/schema.png)
+ - Schema file for test and train tables: [schema.sql](resources/schema.sql)
 
 Importing the original kaggle datasets into PostgreSQL was problematic due to the inherent multi-line tweets including line feeds without carriage returns. Process utilized to import the data as follows:
 1.  Utilizing Microsoft Excel or a similar program, open the CSV file.
