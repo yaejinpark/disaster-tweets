@@ -10,12 +10,25 @@ Questions we hope to answer
 Data source
 Data description
 
+### Questions We Hope to Answer
+
+### Data Source and Description
+
+Kaggle provided three .csv datasheets for this topic - train.csv, test.csv, and sample_submission.csv. As their names imply, these are datasheets for users to train and test their model with, and also compare the final results of testing with the sample_submission.csv if the users decide to participate in the competition. 
+
+*Note: The mentioned data files are not included in this repository. Please download them from [the competition link in Kaggle]() and place them in a folder named 'resources.' If you don't have this folder, you can manually create one. The folder directory should look like the following:*
+
+![directory](resources/directory.png)
+
+
+
+
 ### Database
 
 Kaggle challenge files test.csv and train.csv imported to PostgreSQL database for use in Jupyter. 
 
- - Schema image for test and train tables: [schema image](resources/schema.png)
- - Schema file for test and train tables: [schema.sql](resources/schema.sql)
+ - Schema image for test and train tables: ![schema image](resources/schema.png)
+ - Schema file for test and train tables: ![schema.sql](resources/schema.sql)
 
 Importing the original kaggle datasets into PostgreSQL was problematic due to the inherent multi-line tweets including line feeds without carriage returns. Process utilized to import the data as follows:
 1.  Utilizing Microsoft Excel or a similar program open the CSV file.
