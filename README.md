@@ -12,20 +12,37 @@ Data description
 
 ## Questions We Hope to Answer
 
+- Can we successfully distinguish tweets that are actually related to disasters from those that are not?
+- If "yes" to the question above, what are some NLP techniques (or others) that can improve the prediction model?
+- Demonstrating said techniques for model's improvement
+
 ## Data Source and Description
 
 Kaggle provided three .csv datasheets for this topic - train.csv, test.csv, and sample_submission.csv. As their names imply, these are datasheets for users to train and test their model with, and also compare the final results of testing with the sample_submission.csv if the users decide to participate in the competition. 
 
 *Note: The mentioned data files are not included in this repository. Please download them from [the competition link in Kaggle](https://www.kaggle.com/c/nlp-getting-started/data) and place them in a folder named 'resources.' If you don't have this folder, you can manually create one. The folder directory should look like the following:*
 
-![directory](resources/directory.png)
+![directory](resources/images/directory.png)
 
+The train.csv datasheet should have the following columns (beneath A, B, C, D, E):
+
+![training](resources/images/training.png)
+
+ - id: The numerical ids of the tweets in the datasheet
+ - keyword: Any single keyword mentioned in the tweet that is related to the accident - some rows do not have any keywords data.
+ - location: Location where this tweet was posted - some rows do not have any locations data. The location can be any of the following: latitude/longitude pair, country name, city name, junk text (e.g. any text that does not provide information of the location), or combination of two or more of the types.
+ - text: The text content of the tweet 
+ - target: 0 or 1 indicating whether the tweet is indeed about a disaster or not.
+
+The test.csv looks similar to train.csv, but is missing the target column. This is expected because the model should predict if each rows of tweets in the test.csv are related to disasters or not.
+
+![testing](resources/images/testing.png)
 
 ## Database
 
 Kaggle challenge files test.csv and train.csv imported to PostgreSQL database for use in Jupyter. 
 
- - Schema image for test and train tables: [schema image](resources/schema.png)
+ - Schema image for test and train tables: [schema image](resources/images/schema.png)
  - Schema file for test and train tables: [schema.sql](resources/schema.sql)
 
 Importing the original kaggle datasets into PostgreSQL was problematic due to the inherent multi-line tweets including line feeds without carriage returns. Process utilized to import the data as follows:
