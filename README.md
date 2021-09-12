@@ -17,7 +17,9 @@ PostgreSQL
 
 ## Communication Protocols 
 
-* Google Docs to share information outside of Github
+We will be using a combination of the following to maintain communication and keep on schdule:
+
+* Google Docs to share and store information outside of Github (Roles, Plans, Updates) 
 * Github with individual branches in order to post code and update the ReadMe
-* Weekly meetings to discuss updates and plan roles for the upcoming week 
+* Weekly meetings to discuss updates, problems, plans and roles for the upcoming week 
 * Slack to communicate with eachother, ask questions, get help, etc. 
