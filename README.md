@@ -71,6 +71,6 @@ Versions used in import:
  - pgAdmin 4 Version 5.2
 
 ## Technologies
-Jupyter
-Python
+Jupyter\
+Python\
 PostgreSQL
