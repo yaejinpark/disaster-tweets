@@ -10,6 +10,10 @@ Questions we hope to answer
 Data source
 Data description
 
+## Reasons for Choosing the Topic
+
+One of the most consequential threats humans are facing today is concerning disinformation. With the popularity of social media platforms, conducting disinformation never has been this easy. We wanted to join this Kaggle competition to build a meaningful Machine Learning model that will help us classify between Tweets that actually remark a disaster and not. Furthermore, we wanted to delve into the field of NLP within Machine Learning; and we found this is a great challenge to get started implementing what we learned about NLP. The conclusions we provide here will help agencies programmatically monitor Twitter for disasters. We believe that when technology is used for good, then will the future be built for the betterment of the common good.
+
 ## Questions We Hope to Answer
 
 - Can we successfully distinguish tweets that are actually related to disasters from those that are not?
