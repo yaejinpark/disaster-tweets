@@ -36,6 +36,12 @@ The test.csv looks similar to train.csv, but is missing the target column. This 
 
 ![testing](resources/images/testing.png)
 
+## Machine Learning
+
+Train.csv data categorizes the results with a 0 (not a disaster tweet) or 1 (a tweet about a real disaster). The test.csv and train.csv files are imported into postgreSQL and the database then is accessed using Jupyter Notebook where the data is preprocessed, a model is created and stored based on samples of training data using Clf, validated on further training data, and then used to predict test values based on the stored weight. Additional methodologies will be explored and if successfully implemented, compared against the results utilizing Clf.
+
+![Data Flow Mockup](resources/images/data_mockup.png)
+
 ## Database
 
 Kaggle challenge files test.csv and train.csv imported to PostgreSQL database for use in Jupyter. 
@@ -68,11 +74,6 @@ Versions used in import:
  - Notepad++ Version 7.9.5
  - pgAdmin 4 Version 5.2
 
-## Technologies
-Jupyter\
-Python\
-PostgreSQL
-
 ## Communication Protocols 
 
 We will be using a combination of the following to maintain communication and keep on schdule:
@@ -81,3 +82,8 @@ We will be using a combination of the following to maintain communication and ke
 * Github with individual branches in order to post code and update the ReadMe
 * Weekly meetings to discuss updates, problems, plans and roles for the upcoming week 
 * Slack to communicate with eachother, ask questions, get help, etc. 
+
+## Technologies
+Jupyter\
+Python\
+PostgreSQL
