@@ -10,6 +10,12 @@ Questions we hope to answer
 Data source
 Data description
 
+### Machine Learning
+
+Train.csv data categorizes the results with a 0 (not a disaster tweet) and 1 (a tweet about a real disaster). The test.csv and train.csv files are imported into postgreSQL and the database then is accessed using Jupyter Notebook where the data is preprocessed, a model is created and stored based on samples of training data, validated on further training data, and then used to predict test values based on the stored weight. Additional methodologies will be explored and if successfully implemented, compared against the results utilizing Clf.
+
+[Data Mockup](resources/data_mockup.png)
+
 ### Database
 
 Kaggle challenge files test.csv and train.csv imported to PostgreSQL database for use in Jupyter. 
