@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UFO Finder</title>
+    <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body class="bg-dark">
+    <div class="wrapper">
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+        </nav>
+    <div class="jumbotron">
+      <h1 class="display-4">Disaster Tweets</h1>
+    </div>
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-4">
+                <h3>Can we predict whether tweets are referring to a real disaster? </h3>
+              </div>
+              <div class="col-md-8">
+                <p>
+                  Using a machine learning model, we were successfully able to predict with _% accuracy whether tweets were referring to a real disaster. This project will better help emergency management in the future. 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-3">
+                <form>
+                    <p>Filter Search</p>
+                  </form>
+                  <ul class="list-group">
+
+                </ul>
+                <li class="list-group-item bg-dark">
+                  <label for="date">Enter Date </label>
+                  <input type="text" class="form-control" placeholder="1/10/2010" id="datetime">
+                </li>
+                <li class="list-group-item bg-dark">
+                    <label for="date">Enter a City</label>
+                    <input type="text" class="form-control" placeholder="san francisco" id="city">
+                </li>
+                <li class="list-group-item bg-dark">
+                    <label for="date">Enter a State</label>
+                    <input type="text" class="form-control" placeholder="ca" id="state">
+                </li>
+                <li class="list-group-item bg-dark">
+                    <label for="date">Enter a Country</label>
+                    <input type="text" class="form-control" placeholder="us" id="country">
+                </li>
+                <li class="list-group-item bg-dark">
+                    <label for="date">Enter a Shape</label>
+                    <input type="text" class="form-control" placeholder="circle" id="shape">
+                </li>
+              </div>
+              <div class="col-md-9">
+                <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        
+                        <th>Date</th>
+                        <th>City</th>
+                        <th>State</th>
+                        <th>Country</th>
+                        <th>Shape</th>
+                        <th>Duration</th>
+                        <th>Comments</th>
+                      
+                      </tr>
+                    </thead>
+                    <tbody></tbody>
+                  </table>
+                </div>      
+              </div>
+            </div>
+          </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+<script src="static/js/data.js"></script>
+<script src="static/js/app.js"></script>
+</body>
+</html>
