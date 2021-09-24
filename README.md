@@ -23,6 +23,10 @@ Kaggle challenge files test.csv and train.csv imported to PostgreSQL database fo
  - Schema image for test and train tables: [schema image](resources/schema.png)
  - Schema file for test and train tables: [schema.sql](resources/schema.sql)
 
+Additional results tables have been added to allow the group to conduct analysis on the results of the various 
+NLP methodologies utilized to assess patterns inherent in the results, both the successful classifications 
+and if there are any patterns in the way a specific NLP failed to accurately predict disaster tweets.
+
 Importing the original kaggle datasets into PostgreSQL was problematic due to the inherent multi-line tweets including line feeds without carriage returns. Process utilized to import the data as follows:
 1.  Utilizing Microsoft Excel or a similar program open the CSV file.
 2.  Delete the header row. pgAdmin doesn't have the option to view the first row in a text file as a header row.
