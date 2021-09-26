@@ -18,17 +18,30 @@
         <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
         </nav>
     <div class="jumbotron">
-      <h1 class="display-4">Disaster Tweets</h1>
+      <h1 class="display-3">Disaster Tweets</h1>
     </div>
         <div class="container-fluid">
             <div class="row">
-              <div class="col-md-4">
-                <h3>Can we predict whether tweets are referring to a real disaster? </h3>
+              <div class="col-md-2">
+                <h3>Can we predict whether if are referring to a real disaster? </h3>
               </div>
-              <div class="col-md-8">
-                <p>
-                  Using a machine learning model, we were successfully able to predict with _% accuracy whether tweets were referring to a real disaster. This project will better help emergency management in the future. 
-                </p>
+              <div class="col-md-9">
+                <font size="+2"> <b>Reasons for Choosing the Topic </font> </b> <br> <br> 
+                  One of the most consequential threats humans are facing today is concerning disinformation. With the popularity of social media platforms, conducting disinformation never has been this easy. We wanted to join this Kaggle competition to build a meaningful Machine Learning model that will help us classify between Tweets that actually remark a disaster and not. Furthermore, we wanted to delve into the field of NLP within Machine Learning; and we found this is a great challenge to get started implementing what we learned about NLP. The conclusions we provide here will help agencies programmatically monitor Twitter for disasters. We believe that when technology is used for good, then will the future be built for the betterment of the common good.                </p>
+              </div>
+              <div class="col-md-9">
+                <font size="+2"> <b>Questions We Hope to Answer </font> </b> <br> <br> 
+                <ul>
+                <li>Can we successfully distinguish tweets that are actually related to disasters from those that are not? </li>
+                <li>If "yes" to the question above, what are some NLP techniques (or others) that can improve the prediction model?</li>
+                <li>Demonstrating said techniques for model's improvement</li>
+                </ul>
+              </div>
+              <div class="col-md-9">
+                <font size="+2"> <b>Data Source and Description </font> </b> <br> <br> 
+                Kaggle provided three .csv datasheets for this topic - train.csv, test.csv, and sample_submission.csv. As their names imply, these are datasheets for users to train and test their model with, and also compare the final results of testing with the sample_submission.csv if the users decide to participate in the competition.
+                Note: The mentioned data files are not included in this repository. Please download them from the competition link in Kaggle and place them in a folder named 'resources.' If you don't have this folder, you can manually create one. The folder directory should look like the following: <br> <br>
+                <img src="static/images/Folders .png" alt="HTML5 Icon" style="width:275px;height:250px;"> </img>
               </div>
             </div>
           </div>
@@ -66,20 +79,6 @@
                 </li>
               </div>
               <div class="col-md-9">
-                <table class="table table-striped">
-                    <thead>
-                      <tr>
-                        
-                        <th>Date</th>
-                        <th>City</th>
-                        <th>State</th>
-                        <th>Country</th>
-                        <th>Shape</th>
-                        <th>Duration</th>
-                        <th>Comments</th>
-                      
-                      </tr>
-                    </thead>
                     <tbody></tbody>
                   </table>
                 </div>      
