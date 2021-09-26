@@ -26,3 +26,7 @@ body {
     color: white;
     text-decoration: none;
   }
+
+  p.test {
+    word-wrap: break-word;
+  }
