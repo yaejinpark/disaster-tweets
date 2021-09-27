@@ -4,6 +4,10 @@ Michael Kori\
 Brian Moore\
 Yae Jin Park
 
+## Presentation
+
+Please refer to our [!Google Slides](https://docs.google.com/presentation/d/16GHXlgnKvGZA3lRYmmGfCSaJWSPXvLkdqPTphtwUJrQ/edit?usp=sharing)
+
 ## Reasons for Choosing the Topic
 
 One of the most consequential threats humans are facing today is concerning disinformation. With the popularity of social media platforms, conducting disinformation never has been this easy. We wanted to join this Kaggle competition to build a meaningful Machine Learning model that will help us classify between Tweets that actually remark a disaster and not. Furthermore, we wanted to delve into the field of NLP within Machine Learning; and we found this is a great challenge to get started implementing what we learned about NLP. The conclusions we provide here will help agencies programmatically monitor Twitter for disasters. We believe that when technology is used for good, then will the future be built for the betterment of the common good.
@@ -41,6 +45,10 @@ The test.csv looks similar to train.csv, but is missing the target column. This 
 Train.csv data categorizes the results with a 0 (not a disaster tweet) or 1 (a tweet about a real disaster). The test.csv and train.csv files are imported into postgreSQL and the database then is accessed using Jupyter Notebook where the data is preprocessed, a model is created and stored based on samples of training data using Clf, validated on further training data, and then used to predict test values based on the stored weight. Additional methodologies will be explored and if successfully implemented, compared against the results utilizing Clf.
 
 ![Data Flow Mockup](resources/images/data_mockup.png)
+
+## Why this base model? 
+
+The base model provided by the Kaggle challenge provides a benchmark of achieving an accuracy score of at least 65%. We wanted to build on top of this benchmark because as novices in the field of NLP we thought of delving further based on a result we can trust. The tutorial provides methods to improve the model. We decided to individually work on four separate methodologies to improve the model and try to include them if we can successfully get them working. The further we dive into this field we saw that there are many methods used to assess the accuracy of the model in classifying whether a tweet is a disaster or not.
 
 ## Database
 
