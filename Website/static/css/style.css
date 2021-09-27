@@ -1,0 +1,32 @@
+body {
+
+    color: #f7f7f7;
+    
+  }
+
+  .jumbotron {
+  background-image: url("../images/natural disaster.jpeg");
+  background-size: 100% 100%;
+  text-align: center;
+  }
+
+  ul.nav {
+    padding-left: 0px;
+    background-color: #3D99CE;
+    text-align: center;
+  }
+  ul.nav > li {
+    display: inline-block;
+    padding: 10px 20px;
+  }
+  ul.nav > li:hover {
+    background-color: #2779BF;
+  }
+  ul.nav > li > a {
+    color: white;
+    text-decoration: none;
+  }
+
+  p.test {
+    word-wrap: break-word;
+  }
