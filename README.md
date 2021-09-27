@@ -6,7 +6,7 @@ Yae Jin Park
 
 ## Presentation
 
-Please refer to our [!Google Slides](https://docs.google.com/presentation/d/16GHXlgnKvGZA3lRYmmGfCSaJWSPXvLkdqPTphtwUJrQ/edit?usp=sharing)
+Please refer to our [Google Slides](https://docs.google.com/presentation/d/16GHXlgnKvGZA3lRYmmGfCSaJWSPXvLkdqPTphtwUJrQ/edit?usp=sharing)
 
 ## Reasons for Choosing the Topic
 
