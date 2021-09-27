@@ -2,6 +2,8 @@
 .ipynb_checkpoints/
 resources/test.csv
 resources/train.csv
+resources/test.txt
+resources/train.txt
 resources/sample_submission.csv
 Resources/test.csv
 Resources/train.csv
