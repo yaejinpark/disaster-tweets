@@ -19,13 +19,15 @@
       <h1 class="display-3">Disaster Tweets</h1>
     </div>
       <div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="index.html">Home</a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="collapse navbar-collapse main-wrapper" id="navbarNav">
             <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
               <li class="nav-item">
                 <a class="nav-link" href="Pages/ML1.html">Machine Learning Algorithm #1</a>
               </li>
@@ -38,16 +40,8 @@
             </ul>
           </div>
         </nav>
-        <!-- <nav class="nav navbar-light bg-light">
-            <ul>
-              <li class="active"><a href="index.html">Home</a></li>
-              <li><a href="Pages/ML1.html">Machine Learning Algorithm #1</a></li>
-              <li><a href="Pages/ML2.html">Machine Learning Algorithm #2</a></li>
-              <li><a href="Pages/ML3.html">Machine Learning Algorithm #3</a></li>
-            </ul>
-        </nav> -->
       </div>
-        <br><br><br>
+        <br><br>
         <div class='container'>
           <div class="row">
             <div class="col-md-12">
@@ -70,11 +64,11 @@
               The train.csv datasheet should have the following columns (beneath A, B, C, D, E): <br> <br>
               <img src="static/images/excel.png" alt="HTML5 Icon" style="width:1200px;height:250px;"> </img> <br> <br>
               <ul>
-              <li>id: The numerical ids of the tweets in the datasheet</li>
-              <li>keyword: Any single keyword mentioned in the tweet that is related to the accident - some rows do not have any keywords data.</li>
-              <li>location: Location where this tweet was posted - some rows do not have any locations data. The location can be any of the following: latitude/longitude pair, country name, city name, junk text (e.g. any text that does not provide information of the location), or combination of two or more of the types.</li>
-              <li>text: The text content of the tweet.</li>
-              <li>target: 0 or 1 indicating whether the tweet is indeed about a disaster or not.</li>
+                  <li>id: The numerical ids of the tweets in the datasheet</li>
+                  <li>keyword: Any single keyword mentioned in the tweet that is related to the accident - some rows do not have any keywords data.</li>
+                  <li>location: Location where this tweet was posted - some rows do not have any locations data. The location can be any of the following: latitude/longitude pair, country name, city name, junk text (e.g. any text that does not provide information of the location), or combination of two or more of the types.</li>
+                  <li>text: The text content of the tweet.</li>
+                  <li>target: 0 or 1 indicating whether the tweet is indeed about a disaster or not.</li>
               </ul> 
               The test.csv looks similar to train.csv, but is missing the target column. This is expected because the model should predict if each rows of tweets in the test.csv are related to disasters or not. <br><br>
               <img src="static/images/excel_2.png" alt="HTML5 Icon" style="width:1200px;height:250px;"> </img> <br> <br>
